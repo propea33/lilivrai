@@ -1,7 +1,8 @@
+// script.js
 fetch('liste.txt')
     .then(response => response.text())
     .then(data => {
-        const facts = data.split('\\n').filter(line => line.trim() !== '');
+        const facts = data.split('\n').filter(line => line.trim() !== '');
         const factDisplay = document.getElementById('factDisplay');
         const generateButton = document.getElementById('generateButton');
 
